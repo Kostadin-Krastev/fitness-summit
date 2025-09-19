@@ -13,8 +13,8 @@ body {
   box-sizing: border-box;
 }
 
-/* COMPONENTS */
-/* buttons */
+/* ------COMPONENTS--------- */
+/* BUTTONS */
 .hero-button,
 .explore-button,
 .add-cart-button {
@@ -40,7 +40,9 @@ body {
 }
 
 .explore-button {
-  padding: 12px 15.4px;
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 12px 154px;
   border: 1px solid var(--secondary-button-color);
   color: var(--secondary-button-color);
   background-color: var(--thirdly-color);
@@ -65,3 +67,35 @@ body {
   color: var(--thirdly-color);
   background-color: var(--primary-button-color);
 }
+
+/* CARDS */
+/* route section cards */
+.route-card {
+  text-align: center;
+  max-width: 480px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004d;
+}
+
+.route-card-icon {
+  margin: 16px 0;
+}
+
+.route-card-heading {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  color: var(--secondary-button-color);
+}
+
+.route-card-text {
+  margin-bottom: 24px;
+  letter-spacing: 0px;
+  color: var(--primary-color);
+}
+/* ---------MAIN SECTIONS--------- */
+/* HERO SECTION */
+/* ROUTE SECTION */
