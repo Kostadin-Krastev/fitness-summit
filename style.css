@@ -1,4 +1,17 @@
+:root {
+  --white-color: #fff;
+  --grey-color: #ededed;
+  --red-color: #ed1c24;
+  --dark-text-color: #4c4c4c;
+  --mask-hero-color-rgba-80: rgba(35, 60, 92, 0.8);
+}
+
 body {
   font-family: Poppins, Arial, sans-serif;
   font-size: 1rem;
+}
+
+h1 {
+  background-color: var(--mask-hero-color-rgba-80);
+  color: var(--white-color);
 }
