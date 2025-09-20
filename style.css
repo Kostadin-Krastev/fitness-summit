@@ -207,12 +207,19 @@ h2,
   margin-bottom: 16px;
 }
 
-.bundle-card-image {
+.bundle-card-image-wrapper::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.7) 100%
   );
+  z-index: 1;
 }
 
 .bundle-card-text-wrapper {
@@ -221,6 +228,7 @@ h2,
   left: 10px;
   margin: 0 auto;
   color: var(--thirdly-color);
+  z-index: 2;
 }
 
 .bundle-card-title {
@@ -295,6 +303,13 @@ h2,
   background-color: var(--secondary-color);
 }
 
+/* global sections paddings */
+.route-cards-container,
+.video-cards-container,
+.bundle-cards-container {
+  padding-bottom: 64px;
+}
+
 /* HERO SECTION */
 .hero-section {
   height: 502px;
@@ -330,7 +345,6 @@ h2,
   grid-template-columns: repeat(3, 480px);
   gap: 40px;
   justify-content: center;
-  padding-bottom: 64px;
 }
 
 /* TRAINING SECTION */
@@ -338,7 +352,11 @@ h2,
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-bottom: 64px;
 }
 
 /* BUNDLES SECTION */
+.bundle-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
