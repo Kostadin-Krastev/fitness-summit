@@ -173,6 +173,10 @@ h2,
   color: #fff;
 }
 
+.video-description {
+  margin: 0 16px 16px 16px;
+}
+
 .video-card-title {
   font-weight: 700;
   text-transform: capitalize;
@@ -229,4 +233,8 @@ h2,
 
 /* TRAINING SECTION */
 .video-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 64px;
 }
