@@ -15,7 +15,7 @@ body {
   box-sizing: border-box;
 }
 
-/* ---------FONT STYLE--------- */
+/* ---------GLOBAL FONT STYLE--------- */
 h1 {
   font-size: 48px;
 }
@@ -141,6 +141,49 @@ h2,
   letter-spacing: 0px;
   color: var(--primary-color);
 }
+
+/* Training section video card */
+.video-card {
+  max-width: 302px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004d;
+}
+
+.video-player {
+  position: relative;
+}
+
+.workout-video {
+  margin-bottom: 16px;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 35px;
+  right: 10px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.video-card-title {
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  margin-bottom: 9px;
+}
+
+.video-card-text {
+  font-size: 14px;
+  color: #666;
+}
 /* ---------SECTIONS--------- */
 /* HERO SECTION */
 .hero-section {
@@ -167,12 +210,12 @@ h2,
   background-color: var(--secondary-color);
 }
 
-.route-text-container {
+.text-container {
   margin-bottom: 40px;
   text-align: center;
 }
 
-.route-text-container h2 {
+.text-container h2 {
   padding-top: 64px;
 }
 
@@ -182,4 +225,8 @@ h2,
   gap: 40px;
   justify-content: center;
   padding-bottom: 64px;
+}
+
+/* TRAINING SECTION */
+.video-cards-container {
 }
