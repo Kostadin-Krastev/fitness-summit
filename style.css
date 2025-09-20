@@ -8,6 +8,8 @@
 }
 
 body {
+  max-width: 1920px;
+  margin: 0 auto;
   font-family: Poppins, Arial, sans-serif;
   font-size: 16px;
   box-sizing: border-box;
@@ -29,6 +31,7 @@ h1,
 
 h2 {
   font-size: 40px;
+  margin-bottom: 8px;
 }
 
 h1,
@@ -117,6 +120,7 @@ h2,
   border: 1px solid var(--secondary-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004d;
+  background-color: var(--thirdly-color);
 }
 
 .route-card-icon {
@@ -159,3 +163,23 @@ h2,
   color: var(--thirdly-color);
 }
 /* ROUTE SECTION */
+.route-section {
+  background-color: var(--secondary-color);
+}
+
+.route-text-container {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.route-text-container h2 {
+  padding-top: 64px;
+}
+
+.route-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 480px);
+  gap: 40px;
+  justify-content: center;
+  padding-bottom: 64px;
+}
